@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" width="100%" height="100%">
+    <defs>
+        <!-- Gradients Maxicolour -->
+        <linearGradient id="neonPinkOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FF007F" />
+            <stop offset="100%" stop-color="#FF5E00" />
+        </linearGradient>
+
+        <linearGradient id="cyanYellow" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#00F5D4" />
+            <stop offset="100%" stop-color="#FFD100" />
+        </linearGradient>
+
+        <linearGradient id="purplePink" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#7B2CBF" />
+            <stop offset="100%" stop-color="#FF007F" />
+        </linearGradient>
+
+        <!-- Sombra Projetada "Offset Street" -->
+        <filter id="streetShadow" x="-10%" y="-10%" width="130%" height="130%">
+            <feDropShadow dx="6" dy="6" stdDeviation="0" flood-color="#000000" flood-opacity="1" />
+        </filter>
+
+        <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="8" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        </filter>
+
+        <!-- Padrão de Textura Urbana (Pontilhado Halftone / Asfalto) -->
+        <pattern id="streetHalftone" width="20" height="20" patternUnits="userSpaceOnUse">
+            <circle cx="2" cy="2" r="1.5" fill="rgba(255,255,255,0.07)" />
+            <circle cx="12" cy="12" r="1.5" fill="rgba(255,255,255,0.07)" />
+        </pattern>
+
+        <!-- Padrão Listrado de Alerta -->
+        <pattern id="warningStripes" width="20" height="20" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+            <line x1="0" y1="0" x2="0" y2="20" stroke="#FFD100" stroke-width="10" />
+            <line x1="10" y1="0" x2="10" y2="20" stroke="#121018" stroke-width="10" />
+        </pattern>
+    </defs>
+
+    <!-- 1. FUNDO ASFALTO E MESH URBANO -->
+    <rect width="1000" height="800" fill="#0A0911" />
+    <rect width="1000" height="800" fill="url(#streetHalftone)" />
+
+    <!-- Listras de Alerta no Topo e Rodapé -->
+    <rect x="0" y="0" width="1000" height="12" fill="url(#warningStripes)" />
+    <rect x="0" y="788" width="1000" height="12" fill="url(#warningStripes)" />
+
+    <!-- Marca D'água Street Maxi -->
+    <text x="30" y="750" font-family="'Titan One', sans-serif" font-size="64" fill="rgba(255,0,127,0.06)" letter-spacing="6">LUMEA STREET ZONE</text>
+    <text x="30" y="110" font-family="'DM Mono', monospace" font-size="28" font-weight="bold" fill="#00F5D4" opacity="0.15">&lt;UNICAMP_CAMPUS_NET&gt;</text>
+
+    <!-- 2. ZONAS URBANAS & PRAÇA DA PAZ (Estilo Graffiti Pop) -->
+    <!-- Praça da Paz -->
+    <ellipse cx="480" cy="420" rx="160" ry="110" fill="url(#purplePink)" opacity="0.25" />
+    <ellipse cx="480" cy="420" rx="150" ry="100" fill="none" stroke="#FF007F" stroke-width="4" stroke-dasharray="15 10" />
+
+    <!-- Bloco PB -->
+    <rect x="330" y="320" width="100" height="70" rx="12" fill="#161426" stroke="#00F5D4" stroke-width="3" filter="url(#streetShadow)" />
+    
+    <!-- Bloco RU -->
+    <rect x="550" y="500" width="110" height="80" rx="12" fill="#161426" stroke="#FF5E00" stroke-width="3" filter="url(#streetShadow)" />
+    
+    <!-- Bloco IC -->
+    <rect x="620" y="190" width="120" height="75" rx="12" fill="#161426" stroke="#FFD100" stroke-width="3" filter="url(#streetShadow)" />
+
+    <!-- 3. VIAS CONECTIVAS (Estilo Circuito Metro Maxicolour) -->
+    <!-- Rota Principal de Trânsito -->
+    <path d="M 180 500 C 180 250, 320 180, 580 180 C 800 180, 850 380, 800 620 C 730 740, 380 720, 180 500 Z" 
+          fill="none" stroke="#7B2CBF" stroke-width="18" stroke-linecap="round" />
+    <path d="M 180 500 C 180 250, 320 180, 580 180 C 800 180, 850 380, 800 620 C 730 740, 380 720, 180 500 Z" 
+          fill="none" stroke="#00F5D4" stroke-width="6" stroke-linecap="round" />
+
+    <!-- Linha de Conexão Rápida dos Cookies (Rota Animada) -->
+    <path d="M 380 355 L 605 540 L 680 227 Z" 
+          fill="none" stroke="#FF007F" stroke-width="8" stroke-dasharray="12 12" stroke-linecap="round" filter="url(#neonGlow)" />
+    <path d="M 380 355 L 605 540 L 680 227 Z" 
+          fill="none" stroke="#FFD100" stroke-width="4" stroke-dasharray="12 12" stroke-linecap="round" />
+
+    <!-- 4. BADGES E STICKERS DE RETIRADA (ESTILO POP STREET) -->
+
+    <!-- PONTO 01: CICLO BÁSICO I (PB) -->
+    <g transform="translate(380, 355)">
+        <!-- Aura Neon -->
+        <circle cx="0" cy="0" r="30" fill="#00F5D4" opacity="0.3" filter="url(#neonGlow)" />
+        <circle cx="0" cy="0" r="18" fill="#00F5D4" stroke="#0A0911" stroke-width="4" />
+        <text x="0" y="6" font-family="'Titan One', sans-serif" font-size="16" fill="#0A0911" text-anchor="middle">1</text>
+
+        <!-- Sticker Tag -->
+        <g transform="translate(-100, -75)" filter="url(#streetShadow)">
+            <rect width="160" height="48" rx="8" fill="#FF007F" stroke="#FFFFFF" stroke-width="2" />
+            <!-- Tarja superior preta -->
+            <rect width="160" height="18" rx="6" fill="#0A0911" />
+            <text x="8" y="13" font-family="'DM Mono', monospace" font-size="10" font-weight="bold" fill="#00F5D4">ZONE 01 // DROP</text>
+            <text x="8" y="38" font-family="'DM Sans', sans-serif" font-size="13" font-weight="900" fill="#FFFFFF">CICLO BÁSICO I</text>
+            <!-- Seta decorativa -->
+            <polygon points="140,25 150,33 140,41" fill="#FFD100" />
+        </g>
+    </g>
+
+    <!-- PONTO 02: RU CENTRAL -->
+    <g transform="translate(605, 540)">
+        <!-- Aura Neon -->
+        <circle cx="0" cy="0" r="30" fill="#FF5E00" opacity="0.3" filter="url(#neonGlow)" />
+        <circle cx="0" cy="0" r="18" fill="#FF5E00" stroke="#0A0911" stroke-width="4" />
+        <text x="0" y="6" font-family="'Titan One', sans-serif" font-size="16" fill="#0A0911" text-anchor="middle">2</text>
+
+        <!-- Sticker Tag -->
+        <g transform="translate(25, -20)" filter="url(#streetShadow)">
+            <rect width="160" height="48" rx="8" fill="#FFD100" stroke="#0A0911" stroke-width="2" />
+            <rect width="160" height="18" rx="6" fill="#0A0911" />
+            <text x="8" y="13" font-family="'DM Mono', monospace" font-size="10" font-weight="bold" fill="#FF007F">ZONE 02 // DROP</text>
+            <text x="8" y="38" font-family="'DM Sans', sans-serif" font-size="13" font-weight="900" fill="#0A0911">RU CENTRAL (BANDEJÃO)</text>
+        </g>
+    </g>
+
+    <!-- PONTO 03: INSTITUTO DE COMPUTAÇÃO (IC) -->
+    <g transform="translate(680, 227)">
+        <!-- Aura Neon -->
+        <circle cx="0" cy="0" r="30" fill="#FFD100" opacity="0.3" filter="url(#neonGlow)" />
+        <circle cx="0" cy="0" r="18" fill="#FFD100" stroke="#0A0911" stroke-width="4" />
+        <text x="0" y="6" font-family="'Titan One', sans-serif" font-size="16" fill="#0A0911" text-anchor="middle">3</text>
+
+        <!-- Sticker Tag -->
+        <g transform="translate(-110, -75)" filter="url(#streetShadow)">
+            <rect width="170" height="48" rx="8" fill="#00F5D4" stroke="#0A0911" stroke-width="2" />
+            <rect width="170" height="18" rx="6" fill="#0A0911" />
+            <text x="8" y="13" font-family="'DM Mono', monospace" font-size="10" font-weight="bold" fill="#FFD100">ZONE 03 // DROP</text>
+            <text x="8" y="38" font-family="'DM Sans', sans-serif" font-size="13" font-weight="900" fill="#0A0911">INST. COMPUTAÇÃO (IC)</text>
+        </g>
+    </g>
+
+    <!-- ELEM. DECORATIVOS: PONTOS DE INTERESSE & GRAFFITI TAGS -->
+    <g opacity="0.8">
+        <!-- Tag de Cookie Street -->
+        <g transform="translate(100, 620) rotate(-8)" filter="url(#streetShadow)">
+            <rect width="140" height="30" rx="4" fill="#FF007F" />
+            <text x="12" y="20" font-family="'Titan One', sans-serif" font-size="14" fill="#FFFFFF">FRESH COOKIES</text>
+        </g>
+
+        <g transform="translate(780, 110) rotate(5)" filter="url(#streetShadow)">
+            <rect width="130" height="30" rx="4" fill="#FFD100" />
+            <text x="10" y="20" font-family="'DM Mono', monospace" font-size="12" font-weight="bold" fill="#0A0911">⚡ 100% ARTESANAL</text>
+        </g>
+    </g>
+</svg>

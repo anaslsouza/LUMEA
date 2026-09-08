@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO BÁSICO -->
+    <title>LUMEA — Cookies Artesanais & UNICAMP</title>
+    <meta name="description" content="Cookies artesanais recém-assados na UNICAMP. Pronta entrega na FEA, IQ, IB e entregas em todos os institutos via WhatsApp!">
+    <meta name="keywords" content="cookies unicamp, lumea cookies, doces unicamp, fea unicamp, iq unicamp, ib unicamp, comida barão geraldo">
+    <meta name="author" content="LUMEA Cookies">
+    <meta name="robots" content="index, follow">
+
+    <!-- CORES DO NAVEGADOR (PWA / Mobile) -->
+    <!-- Cor da barra do navegador em celulares Android (usa o Rosa da marca) -->
+    <meta name="theme-color" content="#F04F9D">
+    <!-- Estilo da barra de status no iOS/Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- OPEN GRAPH / WHATSAPP WEB PREVIEW -->
+    <!-- Define como o link vai aparecer ao ser enviado no WhatsApp/Telegram/Instagram -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lumeacookies.com.br/">
+    <meta property="og:title" content="🍪 LUMEA — Cookies Artesanais na UNICAMP">
+    <meta property="og:description" content="Crocança por fora, maciez por dentro. Peça o seu com entrega direta no seu instituto na UNICAMP!">
+    <!-- Link para a imagem de prévia (recomendado: 1200x630px) -->
+    <meta property="og:image" content="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="LUMEA Cookies">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- TWITTER CARDS -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="🍪 LUMEA — Cookies Artesanais na UNICAMP">
+    <meta name="twitter:description" content="Cookies recém-assados com entregas nos institutos da UNICAMP.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- FAVICONS & ÍCONES DE DISPOSITIVOS -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Titan+One&display=swap" rel="stylesheet">
+    
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container">
+           <a href="index.html" class="logo">
+            <img src="logo.svg" alt="LUMEA Logo" class="logo-icon">
+            <span>LUMEA</span>
+        </a>
+
+            <nav class="nav" aria-label="Navegação principal">
+                <a href="#cookies">Sabores</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#comprar" class="nav-highlight">Faça seu pedido!</a>
+            </nav>
+
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <button class="sound-toggle" id="soundToggle" title="Ativar/Desativar Efeitos Sonoros">
+                    <span id="soundIcon">🔊</span>
+                    <span id="soundText">SOM</span>
+                </button>
+
+                <button class="menu-button" aria-label="Abrir menu" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-code">001 / COOKIES ARTESANAIS</div>
+                <h1>
+                    Cookies<br>
+                    desenvolvidos<br>
+                    para serem<br>
+                    <span>mordidos.</span>
+                </h1>
+                <p class="hero-description">
+                    Textura. Temperatura. Contraste. Sabor.
+                    <br>
+                    Confeitaria artesanal pensada em cada detalhe.
+                </p>
+                <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                
+                    <a href="#cookies" class="button button-secondary">Conheça os 3 Sabores</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=80" alt="Cookie artesanal LUMEA em destaque">
+                </div>
+                <div class="hero-sticker" id="heroSticker">
+                    <span>100%</span>
+                    <span>CASEIRO</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTRO -->
+        <section class="intro">
+            <div class="section-code">03 SABORES EXCLUSIVOS</div>
+            <div class="intro-content">
+                <h2>Três receitas.<br>Três experiências.</h2>
+                <p>
+                    Não queríamos fazer apenas mais um cookie. Queríamos criar experiências únicas de textura, aroma e sabor. Atualmente disponíveis com disponibilidade na <strong>FEA e IB</strong>, e entregas diretas para outros institutos da UNICAMP!
+                </p>
+            </div>
+        </section>
+
+        <!-- OS 3 SABORES -->
+        <section class="cookies-section" id="cookies">
+            <div class="section-header">
+                <div class="section-code">COLEÇÃO</div>
+                <h2>Os 3 Sabores</h2>
+            </div>
+
+            <div class="cookie-grid">
+                <!-- 001 BROWNIE -->
+                <article class="cookie-card cookie-card-brownie">
+                    <div class="cookie-card-image">
+                        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80" alt="Cookie Brownie de Chocolate">
+                        <span class="cookie-number">01</span>
+                    </div>
+                    <div class="cookie-card-content">
+                        <span class="recipe-code">RECEITA #001</span>
+                        <h3>Brownie</h3>
+                        <p>Chocolate meio amargo, centro extremamente fudgy e casquinha crocante.</p>
+                        <span class="cookie-price">R$ 10,00</span>
+                        <div class="cookie-card-actions">
+                            <button class="btn-card-buy" onclick="addToWhatsappOrder('brownie')">+ Adicionar ao Pedido</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 002 CARAMELO SALGADO -->
+                <article class="cookie-card cookie-card-caramel">
+                    <div class="cookie-card-image">
+                        <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80" alt="Cookie de Caramelo Salgado">
+                        <span class="cookie-number">02</span>
+                    </div>
+                    <div class="cookie-card-content">
+                        <span class="recipe-code">RECEITA #002</span>
+                        <h3>Caramelo Salgado</h3>
+                        <p>Chocolate branco caramelizado, recheio cremoso de caramelo artesanal e flor de sal.</p>
+                        <span class="cookie-price">R$ 10,00</span>
+                        <div class="cookie-card-actions">
+                            <button class="btn-card-buy" onclick="addToWhatsappOrder('caramelo')">+ Adicionar ao Pedido</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 003 CÍTRICOS -->
+                <article class="cookie-card cookie-card-citrus">
+                    <div class="cookie-card-image">
+                        <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=600&q=80" alt="Cookie Cítrico">
+                        <span class="cookie-number">03</span>
+                    </div>
+                    <div class="cookie-card-content">
+                        <span class="recipe-code">RECEITA #003</span>
+                        <h3>Cítricos Sunburst</h3>
+                        <p>Zest de limão siciliano, laranja bahia, maracujá e gotas de chocolate branco.</p>
+                        <span class="cookie-price">R$ 10,00</span>
+                        <div class="cookie-card-actions">
+                            <button class="btn-card-buy" onclick="addToWhatsappOrder('citricos')">+ Adicionar ao Pedido</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        
+        <!-- A MORDIDA -->
+        <section class="bite-section">
+            <div class="section-code">A SENSATIVIDADE</div>
+            <h2>Tudo acontece<br>na primeira mordida.</h2>
+
+            <div class="bite-grid">
+                <article class="bite-step" onclick="playTone(200, 'sine')">
+                    <span>01</span>
+                    <h3>Crocância</h3>
+                    <p>A primeira camada exterior resistente e dourada.</p>
+                </article>
+                <article class="bite-step" onclick="playTone(300, 'sine')">
+                    <span>02</span>
+                    <h3>Maciez</h3>
+                    <p>O centro revela uma textura densa e extremamente fudgy.</p>
+                </article>
+                <article class="bite-step" onclick="playTone(400, 'sine')">
+                    <span>03</span>
+                    <h3>Contraste</h3>
+                    <p>Flor de sal, chocolate e notas cítricas se encontram.</p>
+                </article>
+                <article class="bite-step" onclick="playTone(523, 'sine')">
+                    <span>04</span>
+                    <h3>Final</h3>
+                    <p>O retrogosto prolongado de manteiga de alta qualidade.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- FILOSOFIA -->
+        <section class="philosophy">
+            <div class="section-code">FILOSOFIA</div>
+            <div class="philosophy-content">
+                <h2>Não é só<br>uma receita.</h2>
+                <p>
+                    Cada cookie é desenvolvido como uma experiência sensorial completa. Proporção, tempo de maturação da massa de 48 horas e ingredientes selecionados.
+                </p>
+            </div>
+
+            <div class="sensory-grid">
+                <div class="sensory-item">
+                    <span>01</span>
+                    <strong>TEXTURA</strong>
+                    <p>Crocante → Macio → Cremoso</p>
+                </div>
+                <div class="sensory-item">
+                    <span>02</span>
+                    <strong>TEMPERATURA</strong>
+                    <p>Servidos na temperatura exata de fusão</p>
+                </div>
+                <div class="sensory-item">
+                    <span>03</span>
+                    <strong>AROMA</strong>
+                    <p>Manteiga noisette e baunilha natural</p>
+                </div>
+                <div class="sensory-item">
+                    <span>04</span>
+                    <strong>SABOR</strong>
+                    <p>Doçura equilibrada com acidez e sal</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE -->
+        <section class="about-preview" id="sobre">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" alt="Processo artesanal de produção">
+            </div>
+            <div class="about-content">
+                <span class="section-code">SOBRE A LUMEA</span>
+                <h2>Entre a cozinha e a ciência.</h2>
+                <p>
+                    Nascida na UNICAMP, combinamos pesquisa de processos gastronômicos com paixão por confeitaria artesanal.
+                </p>
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section class="final-cta">
+            <div class="section-code">PRONTO PARA PROVAR?</div>
+            <h2>Qual vai ser<br>a primeira mordida?</h2>
+            <a href="#comprar" class="button button-primary">Faça seu pedido na UNICAMP</a>
+        </section>
+
+</div>
+
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">LUMEA</a>
+                <p>Cookies desenvolvidos para serem mordidos. Pontos de venda no campus UNICAMP.</p>
+            </div>
+
+        
+
+            <div class="footer-column">
+                <span>CONTATO</span>
+                <a href="#">Instagram @lumeacookies</a>
+                <a href="#">WhatsApp Direct</a>
+            </div>
+
+            <div class="footer-column">
+                <span>SABORES</span>
+                <a href="#cookies">001 Brownie</a>
+                <a href="#cookies">002 Caramelo</a>
+                <a href="#cookies">003 Cítricos</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© <span id="year"></span> LUMEA COOKIES</span>
+            <span>FEITOS COM MANTEIGA & CHOCOLATE</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
